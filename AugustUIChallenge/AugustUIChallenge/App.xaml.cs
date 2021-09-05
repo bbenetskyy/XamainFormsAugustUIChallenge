@@ -12,6 +12,9 @@ namespace AugustUIChallenge
         {
             InitializeComponent();
 
+            Sharpnado.Tabs.Initializer.Initialize(false, false);
+            Sharpnado.Shades.Initializer.Initialize(loggerEnable: false);
+
             MainPage = new MainPage();
         }
 
