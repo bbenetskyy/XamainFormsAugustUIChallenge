@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                    xmlns:tabs="http://sharpnado.com"
+                    x:Class="AugustUIChallenge.Resources.Colors">
+    <Color x:Key="CeramicColor">#FFFEFF</Color>
+    <Color x:Key="SoftPeachColor">#ECEBEF</Color>
+    <Color x:Key="TealightBlueColor">#3D4465</Color>
+    <Color x:Key="SeashellColor">#F3ECFF</Color>
+    <Color x:Key="LavenderColor">#9A8AD5</Color>
+</ResourceDictionary>
