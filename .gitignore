@@ -349,3 +349,4 @@ healthchecksdb
 MigrationBackup/
 
 AugustUIChallenge/.idea/
+*.DS_Store

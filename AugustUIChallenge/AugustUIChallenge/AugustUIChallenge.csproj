@@ -26,6 +26,8 @@
         <Generator>ResXFileCodeGenerator</Generator>
         <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
       </EmbeddedResource>
+      <None Remove="Resources\Fonts\icomoon.ttf" />
+      <EmbeddedResource Include="Resources\Fonts\icomoon.ttf" />
     </ItemGroup>
 
     <ItemGroup>
