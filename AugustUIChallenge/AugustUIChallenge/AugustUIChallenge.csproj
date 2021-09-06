@@ -28,6 +28,7 @@
       </EmbeddedResource>
       <None Remove="Resources\Fonts\icomoon.ttf" />
       <EmbeddedResource Include="Resources\Fonts\icomoon.ttf" />
+      <EmbeddedResource Include="Resources\Fonts\Letters for Learners.ttf" />
     </ItemGroup>
 
     <ItemGroup>
