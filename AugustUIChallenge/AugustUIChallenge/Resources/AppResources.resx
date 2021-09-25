@@ -69,4 +69,16 @@
     <data name="LocationPlaceholder" xml:space="preserve">
         <value>New York, NY, USA</value>
     </data>
+    <data name="HomeTab" xml:space="preserve">
+        <value>Home</value>
+    </data>
+    <data name="CalendarTab" xml:space="preserve">
+        <value>Calendar</value>
+    </data>
+    <data name="MessageTab" xml:space="preserve">
+        <value>Messages</value>
+    </data>
+    <data name="UserTab" xml:space="preserve">
+        <value>Patient</value>
+    </data>
 </root>

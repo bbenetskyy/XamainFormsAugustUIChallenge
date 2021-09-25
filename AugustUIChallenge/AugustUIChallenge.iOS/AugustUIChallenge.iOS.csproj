@@ -12,6 +12,7 @@
         <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
         <AssemblyName>AugustUIChallenge.iOS</AssemblyName>
         <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+        <LangVersion>9</LangVersion>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
         <DebugSymbols>true</DebugSymbols>

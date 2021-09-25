@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AugustUIChallenge"
+             xmlns:tabs="http://sharpnado.com"
+             xmlns:fonts="clr-namespace:AugustUIChallenge.Resources.Fonts;assembly=AugustUIChallenge"
+             xmlns:r="clr-namespace:AugustUIChallenge.Resources;assembly=AugustUIChallenge"
+             xmlns:views="clr-namespace:AugustUIChallenge.Views;assembly=AugustUIChallenge"
+             xmlns:viewModels="clr-namespace:AugustUIChallenge.ViewModels;assembly=AugustUIChallenge"
+             x:Class="AugustUIChallenge.Views.MainView"    
+             x:DataType="viewModels:MainViewModel">
+    <Grid>
+        <tabs:ViewSwitcher x:Name="Switcher"
+                           Animate="True"
+                           VerticalOptions="FillAndExpand"
+                           HorizontalOptions="FillAndExpand"
+                           SelectedIndex="{Binding SelectedViewModelIndex, Mode=TwoWay}">
+            <views:HomeView Animate="True" BindingContext="{Binding Home}" />
+            <views:CalendarView Animate="True" BindingContext="{Binding Calendar}" />
+            <views:MessagesView Animate="True" BindingContext="{Binding Messages}" />
+            <views:UserProfileView Animate="True" BindingContext="{Binding UserProfile}" />
+        </tabs:ViewSwitcher>
+        
+        <tabs:TabHostView x:Name="TabHostView"
+                          HorizontalOptions="FillAndExpand"
+                          VerticalOptions="End"
+                          HeightRequest="60"
+                          Margin="{x:OnPlatform Android='0,0,0,-10', iOS='0'}"
+                          TabType="Fixed"
+                          IsSegmented="True"
+                          CornerRadius="15"
+                          BackgroundColor="{StaticResource CeramicColor}" 
+                          Shades="{
+                          tabs:SingleShade Color='#3D4465',
+                            BlurRadius='10',
+                            Opacity='0.80',
+                            Offset='0,-5'
+                            }"
+                          SelectedIndex="{Binding Source={x:Reference Switcher}, Path=SelectedIndex, Mode=TwoWay}">
+            <tabs:TabHostView.Tabs>
+                <tabs:BottomTabItem IconImageSource="{local:IcoMoon {x:Static fonts:IcoMoonGlyph.Home}, Size=26}"
+                                    Label="{x:Static r:AppResources.HomeTab}"/>
+                <tabs:BottomTabItem IconImageSource="{local:IcoMoon {x:Static fonts:IcoMoonGlyph.Calendar}, Size=26}"
+                                    Label="{x:Static r:AppResources.CalendarTab}" />
+                <tabs:BottomTabItem IconImageSource="{local:IcoMoon {x:Static fonts:IcoMoonGlyph.Mail}, Size=26}"
+                                    Label="{x:Static r:AppResources.MessageTab}" />
+                <tabs:BottomTabItem IconImageSource="{local:IcoMoon {x:Static fonts:IcoMoonGlyph.User}, Size=26}"
+                                    Label="{x:Static r:AppResources.UserTab}"/>
+            </tabs:TabHostView.Tabs>
+        </tabs:TabHostView>
+    </Grid>
+
+</ContentPage>

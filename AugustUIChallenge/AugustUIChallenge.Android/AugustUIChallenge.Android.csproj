@@ -14,9 +14,10 @@
         <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
         <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
         <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-        <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
         <TargetFrameworkVersion>v11.0</TargetFrameworkVersion>
         <AndroidHttpClientHandlerType>Xamarin.Android.Net.AndroidClientHandler</AndroidHttpClientHandlerType>
+        <LangVersion>9</LangVersion>
+        <AndroidSupportedAbis>armeabi-v7a;x86;arm64-v8a;x86_64</AndroidSupportedAbis>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
         <DebugSymbols>true</DebugSymbols>
@@ -69,7 +70,7 @@
     </ItemGroup>
     <ItemGroup>
         <ProjectReference Include="..\AugustUIChallenge\AugustUIChallenge.csproj">
-            <Project>{30F2D29A-D37C-42B6-B4C1-FFA2C9BD6231}</Project>
+            <Project>{13B00DFA-1B89-4CDB-9C78-023D2DDDBD3D}</Project>
             <Name>AugustUIChallenge</Name>
         </ProjectReference>
     </ItemGroup>

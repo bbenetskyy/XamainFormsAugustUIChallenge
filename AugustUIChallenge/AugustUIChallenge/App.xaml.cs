@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using AugustUIChallenge.Views;
+using Xamarin.Forms;
 
 namespace AugustUIChallenge
 {
@@ -11,7 +12,7 @@ namespace AugustUIChallenge
             Sharpnado.Tabs.Initializer.Initialize(false, false);
             Sharpnado.Shades.Initializer.Initialize(loggerEnable: false);
 
-            MainPage = new MainPage();
+            MainPage = new MainView();
         }
 
         protected override void OnStart()

@@ -146,5 +146,29 @@ namespace AugustUIChallenge.Resources {
                 return ResourceManager.GetString("LocationPlaceholder", resourceCulture);
             }
         }
+        
+        internal static string HomeTab {
+            get {
+                return ResourceManager.GetString("HomeTab", resourceCulture);
+            }
+        }
+        
+        internal static string CalendarTab {
+            get {
+                return ResourceManager.GetString("CalendarTab", resourceCulture);
+            }
+        }
+        
+        internal static string MessageTab {
+            get {
+                return ResourceManager.GetString("MessageTab", resourceCulture);
+            }
+        }
+        
+        internal static string UserTab {
+            get {
+                return ResourceManager.GetString("UserTab", resourceCulture);
+            }
+        }
     }
 }

@@ -10,6 +10,7 @@ namespace AugustUIChallenge.iOS
         {
             Xamarin.Forms.Forms.Init();
             Sharpnado.Tabs.iOS.Preserver.Preserve();
+            Sharpnado.Shades.iOS.iOSShadowsRenderer.Initialize();
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);

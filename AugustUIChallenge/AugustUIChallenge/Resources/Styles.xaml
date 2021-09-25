@@ -1,16 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
                     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-                    xmlns:tabs="http://sharpnado.com"
-                    x:Class="AugustUIChallenge.Resources.Styles">
+                    xmlns:tabs="http://sharpnado.com">
     <Style TargetType="Label">
         <Setter Property="FontFamily" Value="LetterFont"/>
         <Setter Property="FontSize" Value="Medium"/>
     </Style>
     <Style TargetType="Label"
            x:Key="BaseIcoMoonLabel">
-        <Setter Property="FontFamily" Value="IcoMoon"/>
+        <Setter Property="FontFamily" Value="IcoMoonFont"/>
         <Setter Property="FontSize" Value="Medium"/>
+    </Style>
+    
+    <Style TargetType="tabs:BottomTabItem">
+        <Setter Property="SelectedTabColor" Value="{StaticResource LavenderColor}" />
+        <Setter Property="UnselectedLabelColor" Value="Gray" />
+        <Setter Property="UnselectedIconColor" Value="LightGray" />
+        <Setter Property="FontFamily" Value="LetterFont" />
+        <Setter Property="LabelSize" Value="14" />
+        <Setter Property="IconSize" Value="28" />
+        <Setter Property="IsTextVisible" Value="False" />
     </Style>
 
 </ResourceDictionary>
